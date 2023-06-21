@@ -1,0 +1,596 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+
+}
+img{
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    background-color: rgba(18, 19, 17, 0.384);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+.main img{
+    width: 80px;
+    height: 90px;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    padding: 33px 20px;
+    align-items: center;
+    font-size: 20px;
+    position: relative;
+}
+.menu ul li a::after{
+    position: absolute;
+    content: '';
+    height: 2px ;
+    width: 80px;
+    background-color: black;
+    bottom: 20px;
+    left: 19px;
+    opacity: 0;
+}
+.menu ul li a:hover::after{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    opacity: 1;
+
+}
+.menu ul li a:hover{
+    color: #f1f7f7;
+}
+
+
+/*  banner part with slide start */
+  .banner-img{
+    padding: 250px 0;
+    position: relative;
+    z-index: 1;
+  
+    
+  }
+ .banner-img::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(17, 16, 15, 0.342);
+    z-index: -1;
+ }
+.banner-text{
+    text-align: end;
+    position: absolute;
+    top: 150px;
+    left: 230px;
+    z-index: 99;
+    
+}
+#banner{
+    position: relative;
+}
+.banner-text h2{
+    color: aliceblue;
+    font-size: 30px;
+    padding: 30px 0;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: 100;
+}
+.banner-text span{
+    color: rgb(229, 245, 15);
+    font-size: 35px;
+}
+.banner-text h5{
+    color: aliceblue;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    position: relative;
+    z-index: 1;
+}
+.banner-text h5::after{
+ position: absolute;
+ content: '';
+ top: 50px;
+ left: 750px;
+ height: 2px;
+ width: 200px;
+ background-color: aliceblue;
+ z-index: -1;
+}
+.banner-text p{
+    width: 550px;
+    margin-left:400px;
+    padding: 30px 0;
+    color: hsl(0, 24%, 93%);
+    /* text-align: end; */
+}
+.icn{
+    font-size: 20px;
+}
+.btn-btn{
+    text-align: right;
+    padding: 0 10px;
+   
+}
+.btn-btn a{
+    border: 2px solid orange;
+    padding: 10px 20px;
+    background-color: aqua;
+   
+}
+#banner .slick-dots{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform:translateY(-50%) ;
+  -webkit-transform:translateY(-50%) ;
+  -moz-transform:translateY(-50%) ;
+  -ms-transform:translateY(-50%) ;
+  -o-transform:translateY(-50%) ;
+}
+
+#banner .slick-dots li{
+    height: 20px;
+    width: 20px;
+    border: 2px solid wheat;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#banner .slick-dots li button{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    color: transparent;
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+    opacity: 0;
+}
+#banner .slick-dots li.slick-active button{
+    opacity: 1;
+}
+/*  banner part with slide END */
+  
+/* about start */
+
+#about{
+    padding: 50px 0;
+}
+.about-main{
+    display: flex;
+    justify-content: space-between;
+}
+.about-item{
+    width: 48%;
+  
+}
+.about-text{
+    text-align: center;
+}
+.about-text p{
+    padding: 30px 0;
+}
+.about-img img{
+    width: 500px;
+    height: 300px;
+}
+.about-text img{
+    height: 50px;
+    width: 200px;
+}
+
+/* about end */
+
+
+
+
+
+/* HEADING START */
+
+#heading{
+    padding-top: 60px ;
+    text-align: center;
+}
+.heading-img img{
+    height: 80px;
+    width: 400px;
+}
+/* HEADING end */
+/*  pashapashi slide with slick item start */
+ 
+.screen-item{
+    width: 20%;
+  }
+.screen-item img{
+   height: 400px;
+      width: 100%;
+}
+#slide{
+    position: relative;
+}
+#slide .next{
+    height: 30px;
+    width:  40px;
+    background-color: rgb(238, 255, 0);
+    position: absolute;
+    top: 200px;
+    left: 50px;
+   text-align: center;
+   padding: 10px 0;
+}
+
+#slide .prev{
+  height: 30px;
+  width:  40px;
+  background-color: rgb(229, 255, 0);
+  position: absolute;
+  top: 200px;
+  right: 50px;
+  text-align: center;
+ padding: 10px 0;
+}
+
+.next{
+    font-size:25px ;
+  
+}
+.prev{
+    font-size: 25px;
+}
+/*  pashapashi slide with slick item end */
+
+
+
+/* vedio start */
+
+
+/* vedo */
+.vedio-text img{
+    height: 90px;
+    width: 150px;
+}
+.vedio-text{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.ved-ved a{
+    width: 100%;
+    height: 300px;
+}
+.about-img img{
+    height: 310px;
+    width: 450px;
+}
+/* plan */
+.plan-main{
+    display: flex;
+    justify-content: space-between;
+}
+.plan-item-main{
+    width: 22%;
+}
+.plan-inner{
+    text-align: center;
+    padding-bottom:30px ;
+}
+.plan-inner h3{
+    padding: 10px 10px;
+    background-color: rgb(194, 170, 170);
+}
+.plan-inner h2{
+    padding-top: 40px ;
+}
+.plan-inner h4{
+    padding-bottom: 45px;
+}
+.plan-inner span{
+    font-size: 10px;
+}
+.plan-inner h3:hover{
+    background-color: rgb(126, 12, 126);
+    color: aliceblue;
+}
+.plan-p p:hover{
+    background-color: rgb(126, 12, 126);
+    color: aliceblue;
+}
+/* .plan-inner p:hover{
+    background-color: rgb(126, 12, 126);
+    color: aliceblue;
+} */
+
+.plan-inner p{
+    padding: 15px 0;
+    background-color: rgb(165, 157, 157);
+line-height: 60px;
+}
+
+/* vedio end */
+
+
+/* users id  team with slide start */
+
+         #team{
+            background: url(../cls24\ img/tem.jpg) no-repeat center / cover;
+            padding: 70px 0;
+position: relative;
+z-index: 1;
+         }  
+#team::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: -1;
+}
+
+
+
+ .team-text{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.team-item{
+    background-color: #f1f7f7;
+    width:670px !important;
+    padding: 20px 30px;
+    text-align: center;
+    margin:0 auto;
+ 
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-bottom: 50px;
+}
+
+.team-img-item{
+    width: 30%;
+    position: relative;
+    margin: 50px 0;
+}
+.team-overlay{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    content: '';
+    top: 0;
+ margin-left: 13px;
+    background-color: rgba(223, 11, 11, 0.459);
+}
+ .team-img-item img{
+    height: 100px;
+    width: 80%;
+ }
+
+.team-img{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+#team .slick-slide img {
+    display: inline-block;
+}
+#team .slick-center .team-overlay{
+    opacity: 0;
+   
+}
+#team .slick-center img{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#team .team-img .slick-dots  {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+
+#team .team-img .slick-dots li{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border:1px solid #f1f7f7;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 5px;
+}
+#team .team-img .slick-dots li button{
+    
+    height: 10px;
+    width: 10px;
+    background-color: #f1f7f7;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: transparent;
+    border: none;
+    margin-top: 5px;
+    opacity: 0;
+}
+#team .team-img li.slick-active button{
+    opacity: 1;
+}
+/* users id  team with slide end*/
+
+
+/* assistant start */
+#assistant{
+    padding: 80px 0;
+}
+.feed-item{
+  
+    display: flex;
+    justify-content: space-between;
+}
+.feed-item-main{
+    width: 31%;
+}
+     .feed-img img{
+        width: 100%;
+        height: 330px;
+     }
+     .feed-img{
+        position: relative;
+     }
+     .feed-overlay{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.452);
+        opacity: 0;
+     }
+
+     .feed-overlay ul li{
+        display: inline-block;
+     }
+     .feed-overlay ul{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+}
+     .feed-overlay ul li i{
+        height: 40px;
+        width: 40px;
+        background-color: aqua;
+        color: black;
+        font-size: 25px;
+        text-align: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        line-height: 40px;
+     }
+
+     .feed-item-main:hover .feed-overlay{
+        opacity: 1;
+     }
+     .feed-text{
+        text-align: center;
+        padding: 10px 20px;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        opacity: 0;
+
+}
+.feed-item-main:hover .feed-text{
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    opacity: 1;
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+.feed-item-main{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.feed-item-main:hover{
+    transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+}
+/* assistant end */
+
+/* last */
+#lo{
+    background-color: aqua;
+}
+.last{
+    text-align: center;
+    padding: 20px 0;
+   font-size: 20px;
+}
+.last span{
+    color: red;
+}
+
+
+
